@@ -11,22 +11,22 @@ export const DiaryDispatchContext = React.createContext();
 
 const mockData = [
   {
-    id: 1,
-    createdDate: new Date().getTime(),
+    id: "mock1",
+    date: new Date().getTime() - 1,
+    content: "mock1",
     emotionId: 1,
-    content: "1번 일기 내용",
   },
   {
-    id: 2,
-    createdDate: new Date().getTime(),
+    id: "mock2",
+    date: new Date().getTime() - 2,
+    content: "mock2",
     emotionId: 2,
-    content: "2번 일기 내용",
   },
   {
-    id: 3,
-    createdDate: new Date().getTime(),
+    id: "mock3",
+    date: new Date().getTime() - 3,
+    content: "mock3",
     emotionId: 3,
-    content: "3번 일기 내용",
   },
 ];
 

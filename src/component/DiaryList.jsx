@@ -1,5 +1,6 @@
 import "./DiaryList.css";
 import Button from "./Button";
+import DiaryItem from "./DiaryItem";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -58,6 +59,11 @@ const DiaryList = ({ data }) => {
             onClick={onClickNew}
           />
         </div>
+      </div>
+      <div className="list_wrapper">
+        {sortedData.map((it) => (
+          <DiaryItem key={it.id} {...it} />
+        ))}
       </div>
     </div>
   );
