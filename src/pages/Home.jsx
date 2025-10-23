@@ -11,8 +11,6 @@ const Home = () => {
   const [pivotDate, setPivotDate] = useState(new Date());
   const [filteredData, setFilteredData] = useState([]);
 
-  console.log("📘 filteredData:", data);
-
   const headerTitle = `${pivotDate.getFullYear()}년 ${
     pivotDate.getMonth() + 1
   }월`;

@@ -92,6 +92,7 @@ const Editor = ({ initData, onSubmit }) => {
           name="content"
           value={state.content}
           placeholder="오늘은 어땠나요?"
+          onChange={handleChangeContent}
         />
       </div>
       <div className="editor_section bottom_section">
