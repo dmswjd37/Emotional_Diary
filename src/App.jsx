@@ -35,7 +35,9 @@ function reducer(state, action) {
     case "INIT":
       return action.data;
     case "CREATE": {
-      return [action.data, ...state];
+      const newState = [action.data, ...state];
+      localStorage.setItem("diary", JSON.stringify(newState));
+      return newState;
     }
     case "UPDATE": {
       return state.map((it) =>
