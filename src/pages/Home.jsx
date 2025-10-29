@@ -44,6 +44,7 @@ const Home = () => {
         rightChild={<Button text={">"} onClick={onIncreaseMonth} />}
       />
       <DiaryList data={data} />
+      <title>Winterlood의 감정 일기장</title>
     </div>
   );
 };
